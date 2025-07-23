@@ -10,13 +10,13 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			let n=arrr.length;
-			if(n===1 || n===0){
+			let k=arrr.length;
+			if(k===1 || k===0){
 				console.log("-Infinity");
 			}
 			let l=-1;
 			let sl=-1;
-			for(let  i=0;i<n;i++){
+			for(let  i=0;i<k;i++){
 				if (arr[i]>l){
 					l=arr[i];
 					
@@ -26,7 +26,7 @@
 					}
 				}
 			}
-			for (let i = 0; i < n; i++) {
+			for (let i = 0; i < k; i++) {
         
         
 		        if (arr[i] > sl && arr[i] !== l) {
@@ -44,6 +44,7 @@
 			}
 			alert(secondHighest(arr));
 		}
+	}
 		Main();
 	</script>
 
